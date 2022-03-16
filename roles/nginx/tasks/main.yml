@@ -1,0 +1,12 @@
+---
+- name: Install git
+  apt:
+    name: git
+    state: present
+    update_cache: yes
+
+- name: Install apache2
+  apt:
+    name: apache2
+    state: latest
+    update_cache: yes

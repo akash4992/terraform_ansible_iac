@@ -1,0 +1,9 @@
+---
+- name: Install git
+  hosts: demo
+  gather_facts: true
+  remote_user: ansible
+  become: yes
+
+  roles:
+  - nginx
